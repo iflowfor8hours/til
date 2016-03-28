@@ -1,7 +1,6 @@
 "It is not necessary to change. Survival is not mandatory."
 W. Edwards Deming
 
-
 "release my changes faster"
 "lower time to market"
 "increase colloboration between silos"
@@ -62,7 +61,7 @@ What is your bug reporting process like?
 
 There are the tick the box style things that anyone has to do, external penetration testing at regular intervals, static analysis of code, automated pen testing with OWASP ZAP, regular access and account audits (how many former employees are on internal mailing lists?), but these are processes that would generally be implemented top down, or by your security team. 
 
-Keep your shit updated.
+Keep your shit updated, 3rd party stuff.
 
 Security games and drills are awesome. At a previous client we had these all the time with different results. Lost laptops, compromised keys, cert expiration. These things
 
