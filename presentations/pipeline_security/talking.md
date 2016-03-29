@@ -6,7 +6,7 @@ What am I here to talk about?
 
 The conflict between devops practices and security organizations is one that can be leveraged into innovation, given the right substrate.
 
-What is devops for?
+What are the kinds of things you hear when someone is telling you how great devops is for their business, or what they will gain by adopting devops practices?
 
 What is security about?
 
