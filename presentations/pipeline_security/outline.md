@@ -1,5 +1,8 @@
-"It is not necessary to change. Survival is not mandatory."
+"t is not necessary to change. Survival is not mandatory."
 W. Edwards Deming
+
+This is a threat that I most often see in signatures blocks in emails from consultants, and in fearmongering blog posts about... selling consulting services. It's never really bothered me until I started writing this presentation and I came across it. 
+Something about it screams inflexiblity even though it states that change is necessary for survival. Let's examine the positions that devops and security take and how we might leverage one to uplift the other.
 
 "release my changes faster"
 "lower time to market"
@@ -24,6 +27,8 @@ Defend, detect, and react.
 
 From these personas...
 
+Security looks like a different problem from a different perspectives. 
+
 From a business perspective...
 Security is a cost center
 Security is a non-functional requirement, we can put that in the next sprint.
@@ -35,13 +40,10 @@ I don't have control of the system or how it's deployed so it's not my problem.
 From an operations stanpoint...
 MY stuff is secure, it's those asshats in DB/development/vendor/OS who can't get their side worked out
 
-Think big java or OS updates and the testing that has to go into pushing that update, in the devops world who's job is that?
-
-From a manager's perspective...
+Think big java or OS updates and the testing that has to go into pushing that update, in the devops world who's job is that? Painless upgrades to chef 11 for anyone who remembers ancient history?
 
 From my perspective...
 That sounds a lot like the same crap that was talked about operations a few short years ago
-
 Security, like performance, is often viewed as outside the scope of a CD pipeline as it is difficult to address these concerns in an automated way.
 
 The socialization of devops hinged on CALMS
