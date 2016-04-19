@@ -26,6 +26,19 @@ Heat: Orchestrates multiple composite cloud applications by using either the nat
 
 If you haven't fallen asleep yet, then you've probably noticed that OpenStack is a bit complex for the uninitiated. Luckily for us [devstack](https://github.com/openstack-dev/devstack), OpenStack's test bed, is pretty straightforward to get up and running. 
 
-I spun up a virtual machine using Vagrant and virtualbox and got started. The goal of this exercise is to get openstack running, then try and leverage google compute engine and see how it works.
+I spun up a virtual machine using Vagrant and virtualbox and got started. The goal of this exercise is to get openstack running, then try to add some capacity from GCE. If I'm feeling ambitious, I may try and autoscale a hello world application running in both private and public cloud.
+
+My first attempt at running `./stack.sh` wound up with an OOM error.
+
+  /vagrant/functions-common: fork: Cannot allocate memory
+
+I added another two gigs of memory, bringing up the total to 4096, to the virtual machine and tried again.
+
+    This is your host IP address: 10.0.2.15
+    Horizon is now available at http://10.0.2.15/dashboard
+    Keystone is serving at http://10.0.2.15:5000/
+    The default users are: admin and demo
+    The password: password
+    2016-04-19 00:21:45.904 | stack.sh completed in 724 seconds
 
 
