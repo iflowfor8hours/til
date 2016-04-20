@@ -30,9 +30,9 @@ I spun up a virtual machine using Vagrant and virtualbox and got started. The go
 
 My first attempt at running `./stack.sh` wound up with an OOM error.
 
-  /vagrant/functions-common: fork: Cannot allocate memory
+    /vagrant/functions-common: fork: Cannot allocate memory
 
-I added another two gigs of memory, bringing up the total to 4096, to the virtual machine and tried again.
+I added another two gigs of memory to the virtual machine bringing up the total to 4096, and tried again.
 
     This is your host IP address: 10.0.2.15
     Horizon is now available at http://10.0.2.15/dashboard
@@ -41,4 +41,5 @@ I added another two gigs of memory, bringing up the total to 4096, to the virtua
     The password: password
     2016-04-19 00:21:45.904 | stack.sh completed in 724 seconds
 
+Interestingly, the only things that I needed to install on an Ubuntu Trusty box was git and build-essentials.
 
