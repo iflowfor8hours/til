@@ -1,0 +1,2 @@
+After seeing the recent announcement from the OpenStack Foundation and the Google Cloud Platform Blog about the integration between the bohemoth of public cloud platforms and the bohemoth of private cloud platforms, I knew I needed to give it a try.
+As a former contributer to OpenStack and former operator of one of the largest OpenStack public clouds in existence (Rackspace Cloud), I have a healthy amount of pause
