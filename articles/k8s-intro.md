@@ -1,4 +1,4 @@
-## Quick dive into Kubernetes and Java Spring Cloud
+## A short dip into Kubernetes and Java Spring Cloud
 
 The intention of this article is to learn a little about running real applications on kubernetes, learn to do some kubernetes troubleshooting, and show you around the information that kubernetes gives you to deploy high availability, containerized applications on a cluster.
 
