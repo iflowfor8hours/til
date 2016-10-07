@@ -15,6 +15,8 @@ Conceptually, it is important to note how this application is built and deployed
 3. Config flexibility - If we want to patch tomcat or deploy another app server but not redploy the application, this is dead easy.
 4. Version orthodoxy - We can version and artifact our application code cleanly and consistently from source to artifact to container. This exposes that information in a clean way to operators and developers. Devops people will emit sigh of relief in the continuous delivery temple.
 
+![Archetecture diagram](images/k8sblogpost.png)
+
 Much of this information can be learned from the [Kubernetes Config Best Practices guide](http://kubernetes.io/docs/user-guide/config-best-practices/) and the [Kubernetes Documentation](http://kubernetes.io/docs).
 
 The first step is to define a Kubernetes service for the application. A service is a named load balancer that proxies traffic to one or more containers. This means that when one creates a service, no containers that are actually launched. All we're doing is exposing an endpoint to the outside world. You can define a port or use the one that is assigned by kubernetes. In the service discovery world, if you're worried about manually mapping port numbers, you have bigger problems.
