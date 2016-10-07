@@ -63,7 +63,7 @@ sample-application   10.3.0.58    <nodes>       8080/TCP   5m
 
 Next, we need to create a deployment for our application. A deployment is responsible for managing multiple instances of a replicated pod. The deployment will automatically launch new pods if the number of replicas falls below the specified number. We will use this here to deploy multiple instances of our application cluster for redundancy and availability. In production, we would deploy these across multiple Kubernetes nodes.
 
-There is quite a lot to consumer in this file. In the deployment spec section, we're specifiying that we want three pods created, and giving some metadata to match our existing service. In the template spec section, we're defining what containers we want o run, our mounts, and what ports to expose *to the service*. This is where the conceptual model of Kubernetes started to get confusing to me.
+There is quite a lot to consume in this file. In the deployment spec section, we're specifiying that we want three pods created, and giving some metadata to match our existing service. In the template spec section, we're defining what containers we want to run, our mounts, and what ports to expose *to the service*. This is where the conceptual model of Kubernetes started to get confusing to me.
 
 ```
 apiVersion: extensions/v1beta1
@@ -133,11 +133,11 @@ Events:
 
 Your application should now be running in a replicated state, and accessible from your machine at the IP address of your CoreOS host and the port that Kubernetes output when you created the service. Test this out with `curl http://172.17.4.99:30060`.
 
-I hope this was a helpful introduction to Kubernetes. Drop any feedback to @iflowfor8hours.
+I hope this was a helpful introduction to Kubernetes. Drop any feedback to [@iflowfor8hours.](https://twitter.com/iflowfor8hours)
 
-Note that the application is NOISY, you'll see a lot of exceptions in the application log, because spring is configured in such a way that it is attempting and failing to do service discovery. That is a problem for another day.
+Note that the application is NOISY, you'll see a lot of exceptions in the application log, because spring cloud is configured in such a way that it is attempting and failing to do service discovery. That is a problem for another day.
 
-To get this working, I did a lot of troubleshooting, and learned a lot about querying my cluster and the various services inside of it. Here is a quick reference of the relevant commands used to figure out what is going on in Kubernetes
+To learn about how Kubernetes was working, I did a lot of troubleshooting, and learned a lot about querying my cluster and the various services inside of it. Here is a quick reference of the relevant commands used to figure out what is going on in Kubernetes
 
 ```
 # To get the Kubernetes node cluser addresses and confirm you can speak get to the API
